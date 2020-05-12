@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "go_graphql_api",
+            "dialect": "PostgreSQL",
+            "name": "go_graphql_api",
+            "password": "mysecretpassword",
+            "port": 5432,
+            "server": "localhost",
+            "username": "postgres"
+        }
+    ]
+}

@@ -43,7 +43,7 @@ db-stop: ## stop the database server (local)
 
 .PHONY: testdata
 testdata: ## populate the database with test data
-	$(call psql-exec,DROP SCHEMA IF EXISTS public CASCADE)
-	$(call psql-exec,CREATE SCHEMA public)
-	$(call psql-exec,CREATE DATABASE go_graphql_db)
+	# $(call psql-exec,DROP SCHEMA IF EXISTS public CASCADE)
+	# $(call psql-exec,CREATE SCHEMA public)
+	$(call psql-exec,CREATE DATABASE "go_graphql_db")
 	$(call psql-file,./migrations/init.sql)
